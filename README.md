@@ -3,6 +3,12 @@ msaccess-vcs-integration
 
 Synchronize your Access Forms, Macros, Modules, Queries, and Reports with a version control system.
 
+---
+
+*This repository is defunct. Another person has offered to take ownership of this project, and so it has been passed to him. Please see https://github.com/timabell/msaccess-vcs-integration for the most current version of the project.*
+
+---
+
 *This code is built and tested on Microsoft Access 2010. It will probably work in earlier versions, but YMMV.*
 
 The Microsoft Access code module in this project provides functions to export and import all of your Access objects to plain text files so that you can use a version control tool to track changes in these objects. For Access objects which are normally exported in `UCS-2-little-endian` encoding , the included module automatically converts to the source code to and from `UTF-8` encoding during export/import; this is to ensure that you don't have trouble branching, merging, and comparing in tools such as Mercurial which [treat any file containing 0x00 bytes as a non-diffable binary file](http://mercurial.selenic.com/wiki/BinaryFiles).
